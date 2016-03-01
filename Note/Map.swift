@@ -1,4 +1,2 @@
-# «Ø¥ß
-```Swift
-var maps = [Int: Int]() // «Ø¥ß¤@­Ó map
-```
+# å»ºç«‹ map
+var maps = [Int: Int]() // å»ºç«‹ä¸€å€‹ map

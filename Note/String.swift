@@ -1,9 +1,7 @@
-```Swift
-// ¦r¦êªø«×
+# å­—ä¸²é•·åº¦
 var s: String
 let inputStrLen = s.characters.count 
 
-// ®Ú¾Ú¯Á¤Ş(idx)¨ú¦r¦ê¦r¤¸ - «ÜºC
+# æ ¹æ“šç´¢å¼•(idx)å–å­—ä¸²å­—å…ƒ - å¾ˆæ…¢
 let strIdx  = s.startIndex.advancedBy(idx)
 let nowChar = s.characters[strIdx]
-```

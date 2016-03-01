@@ -1,4 +1,3 @@
-```Swift
 # 初始化陣列
 let array = [Int](count: 300, repeatedValue: -1)
 
@@ -19,4 +18,3 @@ let b = Array(bStr.unicodeScalars)
 # 將字串轉為字元陣列
 var myString = "Hello"
 let characters = [Character](myString.characters)
-```
