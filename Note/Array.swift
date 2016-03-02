@@ -18,3 +18,6 @@ let b = Array(bStr.unicodeScalars)
 # 將字串轉為字元陣列
 var myString = "Hello"
 let characters = [Character](myString.characters)
+
+# 排序
+Array.sort(<)
