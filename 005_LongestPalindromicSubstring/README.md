@@ -341,3 +341,72 @@ class Solution {
     }
 }
 ```
+
+想法四(194 ms)
+```Swift
+// 整理 Code 
+class Solution {
+    func preProcess(s:String) -> String {
+        let strArray    = Array(s.unicodeScalars)
+        var sb          = [String]()
+        sb.append("^")
+        for i in 0..<s.characters.count  {
+            sb.append("#")
+            sb.append(String(strArray[i]))
+        }
+        sb.append("#")
+        sb.append("$")
+        return sb.joinWithSeparator("")
+    }
+	func longestPalindrome(s: String) -> String {
+        if  (s.characters.count) <= 1 {
+            return s
+        } 	
+        let SArray      = Array(s.characters)
+        let TStr        = preProcess(s)
+        let TArray      = Array(TStr.unicodeScalars)
+        let TLen        = TStr.characters.count
+        var P           = [Int](count: TLen, repeatedValue: -1) // 記錄 i 位置的字元最大迴文長度
+        var C           = 0                                     // 記錄中心點位置,會變動
+        var R           = 0                                     // 記錄最右邊的 Range
+		var maxP        = 0 
+		var maxPIndex   = 0
+		
+		for (index, char) in TArray.enumerate() {
+			if index == 0 || index == TLen - 1 {
+				continue
+			}
+			//print("index = \(index) / char = \(char)")
+			
+			// (1)
+			P[index] = R > index ? min(P[2*C-index], R-index) : 1
+			
+			// (2)
+			while   index + P[index] < TLen - 1 && 
+			        index - P[index] > 0        && 
+			        TArray[index + P[index]] == TArray[index - P[index]]
+			{
+				P[index] = P[index]+1
+			}
+			
+			// (3)
+			if index + P[index] > R {
+			    C = index
+				R = index + P[index]
+			}
+			
+			// (4)
+			if maxP < P[index] {
+				maxP        = P[index]
+				maxPIndex   = index
+			}
+		}
+		//print(maxP)
+		//print(maxPIndex)
+		//print(P)
+		let startPos    = maxPIndex / 2 - maxP / 2
+		let endPos      = startPos + maxP - 2
+		return String(SArray[startPos...endPos])
+	}
+}
+```
