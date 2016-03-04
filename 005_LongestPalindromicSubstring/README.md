@@ -238,3 +238,106 @@ class Solution {
     }
 }
 ```
+
+# 想法三(152 ms)
+```Swift
+/*使用 Manacher 演算法
+http://articles.leetcode.com/longest-palindromic-substring-part-ii
+*/
+extension String {
+    subscript (r: Range<Int>) -> String {
+        get {
+            let startIndex  = self.startIndex.advancedBy(r.startIndex)
+            let endIndex    = self.startIndex.advancedBy(r.endIndex)
+            return self[Range(start: startIndex, end: endIndex)]
+        }
+    }
+}
+class Solution {
+    // 將原始字串 S 加入 # ,並在最前加入^,最後加入 $,目的是避免在迴圈中對陣列 out of range 
+    func preProcess(s:String) -> String {
+        let strArray    = Array(s.unicodeScalars)
+        var sb          = [String]()
+        sb.append("^")
+        for i in 0..<s.characters.count  {
+            sb.append("#")
+            sb.append(String(strArray[i]))
+        }
+        sb.append("#")
+        sb.append("$")
+        return sb.joinWithSeparator("") // 字串陣列轉字串
+    }
+
+    func longestPalindrome(s: String) -> String {
+        if  (s.characters.count) <= 1 {
+            return s
+        }    
+        let TStr        = preProcess(s)
+        let TArray      = Array(TStr.unicodeScalars)
+        let TLen        = TStr.characters.count
+        var P           = [Int](count: TLen, repeatedValue: -1) // 記錄 i 位置的字元最大迴文長度
+        var C           = 0                                     // 記錄中心點位置,會變動
+        var R           = 0                                     // 記錄最右邊的 Range
+        //print(TLen)
+        //print(TStr)
+        //print(TArray)
+        //print(preProcess(s).characters.count)
+        
+        for i in 1..<(TLen-1) {
+            /*
+            找目前 i 位置的鏡像,以 C 為中心 to i' = C - (i-C)
+            例如:  a b c a b c a b c 
+                   0 1 2 3 4 5 6 7 8
+            假設 C 位於 4,而目前 i 位在 6 ,則 i 的鏡像 i' = 2 (以 C 為中心的對稱位置)
+            */
+            let i_mirror    = 2*C-i  
+            
+            
+            if R > i  // 檢查目前位置 i 是否在 R 裡面
+            {
+                /*
+                如果是,則直接把鏡像的 P 值給他
+                但這裡還要特別注意,如果鏡像的 P 值大於 R-i
+                表示在鏡像的那個位置的迴文範圍已經超出 R 的鏡像範圍,這邊就只能把 R-i 給他
+                */
+                P[i] = min(R-i, P[i_mirror])  
+            }
+            else
+            {
+                // 沒有在 R 裡面,需要重新計算 P 值
+                P[i] = 0    
+            }
+            
+            // 計算 P 值的地方,以目前 i 的位置重複往前和往後比較,如果相同則目前 i 位置的 P 值 +1
+            while TArray[i + 1 + P[i]] == TArray[i - 1 - P[i]] {
+                P[i] = P[i]+1
+            }
+            
+            // 如果目前位置 i 的 P 值比目前的 R 還大,則將 R 擴張,並且中心點ㄉ移動到 i 的位置
+            if i + P[i] > R {
+              C = i
+              R = i + P[i]
+            }
+        }
+        
+        var maxLen      = 0;
+        var centerIndex = 0;
+        for i in 1..<(TLen-1) {
+            if P[i] > maxLen {
+              maxLen        = P[i]
+              centerIndex   = i
+            }
+        }
+        //print("maxLen       = \(maxLen)")
+        //print("centerIndex  = \(centerIndex)")
+        var result      = ""
+        for i in centerIndex-maxLen...centerIndex+maxLen {
+            if TArray[i] != "#" {
+                result = result+String(TArray[i])
+            }
+        }
+        //print(result)
+        return result
+    }
+}
+```
