@@ -21,6 +21,7 @@ let b = Array(bStr.unicodeScalars)
 # 將字串轉為字元陣列
 var myString = "Hello"
 let characters = [Character](myString.characters)
+let characters = Array(myString.characters)
 
 # 將字串陣列轉字串
 var sb      = [String]()
