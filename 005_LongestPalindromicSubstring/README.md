@@ -243,6 +243,19 @@ class Solution {
 ```Swift
 /*使用 Manacher 演算法
 http://articles.leetcode.com/longest-palindromic-substring-part-ii
+實際做法有幾個步驟
+1.  將原字串 S 改為 T ,字元之間加上 #,主要用於不管 S 為奇偶數都可變為 T 奇數(非必須)
+2.  開始由左向右掃描字串
+3.  每次掃到 i 位置時先檢查是否在 R 內
+      => 不在 R 內 -> 重新計算 P 
+      => 在   R 內 -> 找鏡像 i' 的 P 值(以 C 為中心) 是否大於 R,沒有就可以直接使用,有的話只能使用 R-i 來當作 P
+4.  計算 P 值(如果根據 3 已經得到 P 值後,直接從 P 值+1 的位置開始算,避免又重複計算一次)
+5.  檢查 i 位置加上 P[i] 是否大於 R,如果是代表 R 可以繼續擴大,並且 C 移動到 i 目前的位置
+
+結論: 
+非常難用文字理解,需要實際畫圖才能理解流程
+此演算法重點在於"使用之前就計算好的 P 值"(使用鏡像的 P 值)
+所以可以減少重複計算的時間
 */
 extension String {
     subscript (r: Range<Int>) -> String {
