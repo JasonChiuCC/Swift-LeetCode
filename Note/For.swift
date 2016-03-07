@@ -1,6 +1,6 @@
 # 遍歷字串
 let TArray      = Array(TStr.unicodeScalars)
-for (index, char) in TArray.enumerate() { }
+for (index, char) in TArray.enumerate() { }   // 慢
 
 # 遞增 / 遞減 迴圈
 for idx in 0..<10 {
