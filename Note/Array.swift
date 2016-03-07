@@ -33,3 +33,8 @@ Array.sort(<)
 # 陣列加入元素
 var sb = [String]()
 sb.append("$")
+
+# Optional 陣列
+var arr: Int?[] = [1, 2, nil, 4, 5]
+var arr: [Int?] = [1, 2, nil, 4, 5]
+var arr: Array<Int?> = [1, 2, nil, 4, 5]
