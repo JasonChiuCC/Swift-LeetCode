@@ -302,7 +302,8 @@ class Solution {
             L - abs(L - idx % (2*L)) 此公式
             會算出遞增->遞減->遞增.... 數字
             例如 0,1,2,3,2,1,0,1,2,3,2,1,.....
-            */            
+            */      
+            print("\(L) - abs(\(L) - \(idx)%\(2*L) ) = \(L - abs(L - idx % (2*L)))")      
             array[ L - abs(L - idx % (2*L))].append(String(strArray[idx]))
         }
         
