@@ -10,6 +10,6 @@ Leetcode implementation in swift
 
 [Leetcode](https://leetcode.com/ "Leetcode")
 
-![Status](https://img.shields.io/badge/[E]-TwoSum 40%20ms-brightgreen.svg =100x20)
+![](https://img.shields.io/badge/[E]-TwoSum 40%20ms-brightgreen.svg =250x)
 
 
