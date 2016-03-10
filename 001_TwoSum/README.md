@@ -54,7 +54,7 @@ let result   = solution.twoSum(arrayNum,target)
 print(result)
 ```
 
-# 想法二
+# 想法二 (40 ms)
 
 使用 Map 解題,假設傳入陣列是 [3,2,4] 目標是 6, 也可以說我們對每個陣列值所要找的數字是
 
