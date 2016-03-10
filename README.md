@@ -9,3 +9,5 @@ Leetcode implementation in swift
 [Swift](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html "Swift")
 
 [Leetcode](https://leetcode.com/ "Leetcode")
+
+- [001] (https://img.shields.io/badge/E-40%20ms-brightgreen.svg) TwoSum
