@@ -11,6 +11,9 @@ Leetcode implementation in swift
 [Leetcode](https://leetcode.com/ "Leetcode")
 
 ![Status](https://img.shields.io/badge/[001] TwoSum                                     -40%20ms -brightgreen.svg)
+
 ![Status](https://img.shields.io/badge/[002] AddTwoNumbers                              -620%20ms-brightgreen.svg)
+
 ![Status](https://img.shields.io/badge/[003] LongestSubstringWithoutRepeatingCharacters -40%20ms -brightgreen.svg)
+
 ![Status](https://img.shields.io/badge/[004] MedianofTwoSortedArrays                    -40%20ms -brightgreen.svg)
