@@ -8,26 +8,19 @@ Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
 
 Output: 7 -> 0 -> 8
 
-# 想法一
-
+# 想法一 (620 ms)
+```Swift
+/* 
 要注意如果還有進位,要自行加入一個 Node 在最後面
-
 注意如果 input 的 list 數量不一致,要自行增加缺少的 Node ,例如:
-
 input: 
-
 [1,8]
-
 [0]
 
 因為第一個 list 有兩個,所以要自行增加一個 Node 才可以相加
 
 Expected:
-
 [1,8]
-
-```Swift
-/* 
 Definition for singly-linked list.
 Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
 Output: 7 -> 0 -> 8
