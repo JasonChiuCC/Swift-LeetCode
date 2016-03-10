@@ -10,4 +10,4 @@ Leetcode implementation in swift
 
 [Leetcode](https://leetcode.com/ "Leetcode")
 
-- [001] ![Status](https://img.shields.io/badge/E-40%20ms-brightgreen.svg) TwoSum
+## ![Status](https://img.shields.io/badge/E-40%20ms-brightgreen.svg) [001] TwoSum
