@@ -12,8 +12,8 @@ Leetcode implementation in swift
 
 ![](https://img.shields.io/badge/E-40%20ms-brightgreen.svg?link=http://abc.xyz&link=http://shields.io)
  
-![](https://img.shields.io/badge/[002] AddTwoNumbers-620%20ms-brightgreen.svg?logoWidth=80)
+![](https://img.shields.io/badge/[002] AddTwoNumbers                             -620%20ms-brightgreen.svg?logoWidth=80)
  
 ![](https://img.shields.io/badge/[003] LongestSubstringWithoutRepeatingCharacters-40%20ms-brightgreen.svg?logoWidth=80)
 
-![](https://img.shields.io/badge/[004] MedianofTwoSortedArrays-40%20ms-brightgreen.svg?logoWidth=80)
+![](https://img.shields.io/badge/[004] MedianofTwoSortedArrays                   -40%20ms-brightgreen.svg?logoWidth=80)
