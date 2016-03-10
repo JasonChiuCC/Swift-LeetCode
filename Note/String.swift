@@ -6,6 +6,9 @@ let inputStrLen = s.characters.count
 let strIdx  = s.startIndex.advancedBy(idx)
 let nowChar = s.characters[strIdx]
 
+# UTF8 表示法
+String(char).utf8
+
 # 擷取字串
 Swift 1.2 用法
 位置(-)        9876543210
