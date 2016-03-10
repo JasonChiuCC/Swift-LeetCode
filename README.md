@@ -10,10 +10,6 @@ Leetcode implementation in swift
 
 [Leetcode](https://leetcode.com/ "Leetcode")
 
-![Status](https://img.shields.io/badge/[E]-TwoSum 40%20ms                                   -brightgreen.svg)
+![Status](https://img.shields.io/badge/[E]-TwoSum 40%20ms-brightgreen.svg =100x20)
 
-![Status](https://img.shields.io/badge/[M]-AddTwoNumbers 620%20ms                            -brightgreen.svg)
 
-![Status](https://img.shields.io/badge/[M]-LongestSubstringWithoutRepeatingCharacters 40%20ms-brightgreen.svg)
-
-![Status](https://img.shields.io/badge/[H]-MedianofTwoSortedArrays 40%20ms                   -brightgreen.svg)
