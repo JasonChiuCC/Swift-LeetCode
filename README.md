@@ -1,10 +1,16 @@
-# LeetCode Swift
-
 ![Travis](https://img.shields.io/travis/rust-lang/rust.svg)
 ![Language](https://img.shields.io/badge/language-swift%202.2-orange.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-Leetcode implementation in swift
+### LeetCode Swift
+--------
+
+使用 Swift 實作 LeetCode 題目
+
+* **[Swift 官方手冊]**(https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html "Swift")
+
+* **[Leetcode]**(https://leetcode.com/ "Leetcode")
+
 
 [Swift](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html "Swift")
 
