@@ -12,4 +12,14 @@ Leetcode implementation in swift
 
 ![](https://img.shields.io/badge/[001]-040%20ms-brightgreen.svg)
 
-![](https://img.shields.io/badge/[002]-620%20ms-brightgreen.svg)
+![](https://img.shields.io/badge/[002]-620%20ms-yellow.svg)
+
+![](https://img.shields.io/badge/[003]-052%20ms-yellow.svg)
+
+![](https://img.shields.io/badge/[004]-264%20ms-red.svg)
+
+![](https://img.shields.io/badge/[005]-152%20ms-yellow.svg)
+
+![](https://img.shields.io/badge/[005]-152%20ms-yellow.svg)
+
+![](https://img.shields.io/badge/[006]-212%20ms-brightgreen.svg)
