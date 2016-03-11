@@ -15,9 +15,12 @@ Leetcode implementation in swift
 --------
 
 *  Problems Number - Run Time 
-*  Easy   - Brightgreen
-*  Medium - Yellow
-*  Hard   - Red
+
+---
+Easy: Brightgreen
+Medium: Yellow
+Hard: Red
+---
 
 
 ![](https://img.shields.io/badge/[001]-040%20ms-brightgreen.svg)
