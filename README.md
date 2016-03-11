@@ -2,7 +2,7 @@
 ![Language](https://img.shields.io/badge/language-swift%202.2-orange.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-### LeetCode Swift
+LeetCode Swift
 =========
 
 Leetcode implementation in swift
@@ -11,7 +11,7 @@ Leetcode implementation in swift
 
 * [Leetcode](https://leetcode.com/ "Leetcode")
 
-### Status
+Status
 =========
 
 ![](https://img.shields.io/badge/[001]-040%20ms-brightgreen.svg)
