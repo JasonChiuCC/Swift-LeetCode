@@ -11,10 +11,12 @@
 
 * [Leetcode](https://leetcode.com/ "Leetcode")
 
+### 狀態說明
+--------
 
-[Swift](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html "Swift")
+*  題目編號 - 執行秒數
+*  綠色 - Easy
 
-[Leetcode](https://leetcode.com/ "Leetcode")
 
 ![](https://img.shields.io/badge/[001]-040%20ms-brightgreen.svg)
 
