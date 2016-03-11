@@ -14,25 +14,6 @@ Leetcode implementation in swift
 ### Status
 --------
 
-*  Problems Number - Run Time 
-
----
-Easy: Brightgreen
-Medium: Yellow
-Hard: Red
----
-
----
-title: Solarized
-description: Precision colors for machines and people
-author: Ethan Schoonover
-tags: test, testing, test123
-colors: light yellow
-created:  2011 Mar 15
-modified: 2011 Apr 16
-
----
-
 ![](https://img.shields.io/badge/[001]-040%20ms-brightgreen.svg)
 
 ![](https://img.shields.io/badge/[002]-620%20ms-yellow.svg)
