@@ -7,9 +7,9 @@
 
 使用 Swift 實作 LeetCode 題目
 
-* **[Swift 官方手冊]**(https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html "Swift")
+* [Swift 官方手冊](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html "Swift")
 
-* **[Leetcode]**(https://leetcode.com/ "Leetcode")
+* [Leetcode](https://leetcode.com/ "Leetcode")
 
 
 [Swift](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html "Swift")
