@@ -5,17 +5,19 @@
 ### LeetCode Swift
 --------
 
-使用 Swift 實作 LeetCode 題目
+Leetcode implementation in swift
 
-* [Swift 官方手冊](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html "Swift")
+* [Swift](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html "Swift")
 
 * [Leetcode](https://leetcode.com/ "Leetcode")
 
-### 狀態說明
+### Status
 --------
 
-*  題目編號 - 執行秒數
-*  綠色 - Easy
+*  Problems Number - Run Time 
+*  Easy   - Brightgreen
+*  Medium - Yellow
+*  Hard   - Red
 
 
 ![](https://img.shields.io/badge/[001]-040%20ms-brightgreen.svg)
