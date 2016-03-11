@@ -9,3 +9,5 @@ Leetcode implementation in swift
 [Swift](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html "Swift")
 
 [Leetcode](https://leetcode.com/ "Leetcode")
+
+![](https://img.shields.io/badge/[001]-620%20ms-brightgreen.svg)
