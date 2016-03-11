@@ -10,6 +10,6 @@ Leetcode implementation in swift
 
 [Leetcode](https://leetcode.com/ "Leetcode")
 
-![](https://img.shields.io/badge/[001]- 40%20ms-brightgreen.svg)
+![](https://img.shields.io/badge/[001]-040%20ms-brightgreen.svg)
 
 ![](https://img.shields.io/badge/[002]-620%20ms-brightgreen.svg)
